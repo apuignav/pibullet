@@ -12,6 +12,6 @@ setup(
     description='Useful Pushbullet wrapper for Raspberry Pi.',
     long_description=open('README.txt').read(),
     install_requires=[
-        "pushbullet >= 0.8.1",
+        "pushbullet.py >= 0.8.1",
     ],
 )
