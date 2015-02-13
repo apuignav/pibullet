@@ -105,7 +105,6 @@ class Device(object):
 
         """
         if push["type"] == "tickle":
-            # print "TICKLE"
             self._check_pushes()
 
     def _check_pushes(self):
@@ -148,13 +147,11 @@ class Device(object):
                         if answer:
                             title, body = answer
                             pusher = push.get('source_device_iden', None)
-                            print pusher
                             if pusher:
                                 for dev in self._pb_api.devices:
                                     if dev.device_iden == pusher:
                                         pusher = dev
                                         break
-                            print title, body, pusher
                             self.notify(title, body, pusher)
 
 # EOF

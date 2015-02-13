@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='PiBullet',
-    version='0.1.0',
+    version='0.1.1',
     author='Albert Puig',
     author_email='apuignav@cern.ch',
     packages=['pibullet'],
