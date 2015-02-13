@@ -10,7 +10,7 @@ setup(
     # url='http://pypi.python.org/pypi/pibullet/',
     license='LICENSE.txt',
     description='Useful Pushbullet wrapper for Raspberry Pi.',
-    long_description=open('README.txt').read(),
+    long_description=open('README').read(),
     install_requires=[
         "pushbullet.py >= 0.8.1",
     ],
